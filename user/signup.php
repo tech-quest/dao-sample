@@ -7,10 +7,10 @@ $errors = $_SESSION['errors'] ?? [];
 unset($_SESSION['errors']);
 
 // $formInputs = $session->getFormInputs();
-// $userName = $formInputs['userName'] ?? '';
-// $mail = $formInputs['mail'] ?? '';
-$userName = $_SESSION['formInputs']['userName'] ?? '';
-$mail = $_SESSION['formInputs']['mail'] ?? '';
+// $name = $formInputs['name'] ?? '';
+// $email = $formInputs['email'] ?? '';
+$name = $_SESSION['formInputs']['name'] ?? '';
+$email = $_SESSION['formInputs']['email'] ?? '';
 ?>
 
 <!DOCTYPE html>
@@ -34,8 +34,8 @@ $mail = $_SESSION['formInputs']['mail'] ?? '';
       <?php endforeach; ?>
 
       <form action="./signup_complete.php" method="POST">
-        <p><input class='border-2 border-gray-300 w-full mb-5' placeholder="User name" type=“text” name="userName" required value="<?php echo $userName; ?>"></p>
-        <p><input class='border-2 border-gray-300 w-full mb-5' placeholder="Email" type=“mail” name="mail" required value="<?php echo $mail; ?>"></p>
+        <p><input class='border-2 border-gray-300 w-full mb-5' placeholder="User name" type=“text” name="name" required value="<?php echo $name; ?>"></p>
+        <p><input class='border-2 border-gray-300 w-full mb-5' placeholder="Email" type=“mail” name="email" required value="<?php echo $email; ?>"></p>
         <p><input class='border-2 border-gray-300 w-full mb-5' placeholder="Password" type="password" name="password"></p>
         <p><input class='border-2 border-gray-300 w-full mb-5' placeholder="Password確認" type="password" name="confirmPassword"></p>
         <button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-5 w-full' type="submit">アカウント作成</button>
