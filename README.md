@@ -1,5 +1,9 @@
 # blog
 
+## Daoとは？
+- Data Access Object 
+- データベースとやり取りするためのobject
+- データベースからデータの取得や保存などCRUDをする役割
 ## SQL文
 
 CREATE DATABASE blog;
